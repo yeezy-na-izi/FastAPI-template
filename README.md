@@ -72,3 +72,22 @@ app
         ├── __init__.py
         └── main.py
 ```
+
+
+## Pre-commit
+
+To install pre-commit simply run inside the shell:
+
+```bash
+pre-commit install
+```
+
+pre-commit is very useful to check your code before publishing it.
+It's configured using .pre-commit-config.yaml file.
+
+By default it runs:
+
+* black (formats your code);
+* flake8 (spots possibe bugs);
+
+You can read more about pre-commit here: https://pre-commit.com/
