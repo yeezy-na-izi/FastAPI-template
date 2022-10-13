@@ -1,0 +1,20 @@
+[api]
+host = "127.0.0.1"
+port = 8000
+workers_count = 1
+reload = false
+
+[database]
+models = ["aerich.models", "app.db"]
+protocol = "sqlite"
+file_name = "production-database.sqlite3"
+#if protocol != "sqlite" set this parametrs
+#user = None
+#password = None
+#host = None
+#port = None
+
+[info]
+name = "App"
+description = "This is app"
+version = "0.1.0"
