@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./deploy/Dockerfile
+    ports:
+      - "80:80"
+    image: app
+    restart: always
+    env_file:
+      - config.toml
+    environment:
+      HOST: 0.0.0.0
+    volumes:
+      - app-db-data:/db_data/
+
+
+
+volumes:
+  app-db-data:
+    name: db-data
