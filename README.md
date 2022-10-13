@@ -51,29 +51,29 @@ docker-compose -f deploy/docker-compose.yml --project-directory . build
 ```bash
 $ tree "app"
 app
+├── __init__.py
 ├── __main__.py  # Startup script. Starts uvicorn.
-├── api # Package with all handlers.
+├── application.py  # FastAPI application configuration.
+├── settings.py  # Main configuration settings for project.
+├── api  # Package with all handlers.
+│   ├── __init__.py
+│   └── router.py  # Main router.
+├── db  # module contains db models
 │   └── __init__.py
-├── db # module contains db models
-│   └── __init__.py
-├── settings.py # Main configuration settings for project.
-├── static  # Static content.
-│   └── docs
-│       ├── redoc.standalone.js
-│       ├── swagger-ui-bundle.js
-│       └── swagger-ui.css
-└── web # Package contains web server. Events, Middlewares, startup config.
-    ├── __init__.py
-    ├── application.py  # FastAPI application configuration.
-    ├── events  # Package contains events.
-    │   ├── __init__.py
-    │   ├── shutdown.py  # Shutdown event.
-    │   └── startup.py  # Startup event.
-    └── middlewares # Package contains middlewares.
-        ├── __init__.py
-        └── main.py  # Main middleware.
-```
+├── events
+│   ├── __init__.py
+│   ├── shutdown.py  # Shutdown event.
+│   └── startup.py  # Startup event.
+├── middlewares  # Package contains middlewares.
+│   ├── __init__.py
+│   └── main.py  # Main middleware.
+└── static  # Static content.
+    └── docs
+        ├── redoc.standalone.js
+        ├── swagger-ui-bundle.js
+        └── swagger-ui.css
 
+```
 
 ## Pre-commit checker
 

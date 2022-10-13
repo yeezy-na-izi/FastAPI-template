@@ -4,8 +4,8 @@ from tortoise.contrib.fastapi import register_tortoise
 
 from app.settings import get_settings
 from app.api.router import api_router
-from app.web.events import register_shutdown_event, register_startup_event
-from app.web.middlewares import register_main_middleware
+from app.events import register_shutdown_event, register_startup_event
+from app.middlewares import register_main_middleware
 
 
 def get_app() -> FastAPI:

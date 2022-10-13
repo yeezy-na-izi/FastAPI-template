@@ -16,6 +16,7 @@ def register_main_middleware(
 
     @app.middleware("http")
     async def _main_middleware(request: Request, call_next):  # noqa: WPS430
+
         response = await call_next(request)
 
         return response

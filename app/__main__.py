@@ -8,7 +8,7 @@ def main() -> None:
     settings = get_settings("config.toml")
 
     uvicorn.run(
-        "app.web.application:get_app",
+        "app.application:get_app",
         workers=settings.api.workers_count,
         host=settings.api.host,
         port=settings.api.port,
