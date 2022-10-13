@@ -29,7 +29,7 @@
 
 ### Run project
 
-* 🚀 Run bot via `python -m app`
+* 🚀 Run project via `python -m app`
 
 ## Docker
 
