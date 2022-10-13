@@ -49,7 +49,7 @@ docker-compose -f deploy/docker-compose.yml --project-directory . build
 ## Project structure
 
 ```bash
-$ tree app
+$ tree "app"
 app
 ├── __main__.py  # Startup script. Starts uvicorn.
 ├── api # Package with all handlers.
