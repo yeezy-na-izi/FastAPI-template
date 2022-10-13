@@ -3,7 +3,7 @@ from fastapi.responses import UJSONResponse
 from tortoise.contrib.fastapi import register_tortoise
 
 from app.settings import get_settings
-from app.web.api.router import api_router
+from app.api.router import api_router
 from app.web.events import register_shutdown_event, register_startup_event
 from app.web.middlewares import register_main_middleware
 
@@ -20,7 +20,7 @@ def get_app() -> FastAPI:
     app = FastAPI(
         title=settings.info.name,
         description=settings.info.description,
-        version='0.1.0',
+        version=settings.info.version,
         docs_url="/api/docs",
         redoc_url="/api/redoc",
         openapi_url="/api/openapi.json",

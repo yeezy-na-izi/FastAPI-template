@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.web.api import echo, monitoring
+from app.api import echo, monitoring
 
 api_router = APIRouter()
 

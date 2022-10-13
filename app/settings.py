@@ -20,9 +20,9 @@ class LogLevel(str, enum.Enum):  # noqa: WPS600
 class InfoSettings:
     """Settings for the app."""
 
-    name: str = 'App'
-    description: str = 'This is app'
-    version: str = '0.1.0'
+    name: str = "App"
+    description: str = "This is app"
+    version: str = "0.1.0"
 
 
 @dataclass

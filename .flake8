@@ -1,0 +1,18 @@
+[flake8]
+max-line-length = 88
+
+exclude =
+  ./.cache,
+  ./.git,
+  ./.idea,
+  ./.mypy_cache,
+  ./.pytest_cache,
+  ./.venv,
+  ./venv,
+  ./env,
+  ./cached_venv,
+  ./docs,
+  ./deploy,
+  ./var,
+  ./.vscode,
+  *migrations*,

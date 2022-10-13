@@ -5,7 +5,7 @@ from fastapi import FastAPI
 
 
 def register_main_middleware(
-        app: FastAPI,
+    app: FastAPI,
 ) -> Callable[[], Awaitable[None]]:  # pragma: no cover
     """
     Register main middleware.

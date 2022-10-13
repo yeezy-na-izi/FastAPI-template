@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 
 def register_shutdown_event(
-        app: FastAPI,
+    app: FastAPI,
 ) -> Callable[[], Awaitable[None]]:
     """
     Actions to run on application's shutdown.

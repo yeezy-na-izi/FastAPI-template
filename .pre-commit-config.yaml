@@ -1,0 +1,18 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: Format with Black
+        entry: poetry run black
+        language: system
+        types: [ python ]
+
+      - id: flake8
+        name: Lint with flake8
+        entry: poetry run flake8
+        language: system
+        types: [ python ]
+
+
