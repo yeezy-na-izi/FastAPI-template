@@ -1,6 +1,6 @@
 FROM python:3.9.6-slim-buster
 
-RUN pip install --no-cache-dir poetry==1.1.13
+RUN pip install --no-cache-dir poetry==1.2.1
 
 # Copying requirements of a project
 COPY pyproject.toml poetry.lock /app/src/

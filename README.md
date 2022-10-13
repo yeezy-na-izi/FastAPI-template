@@ -3,7 +3,7 @@
 ### Useful and multifunction FastApi template
 
 ![FastApi](https://img.shields.io/badge/FastApi-black?style=flat&logo=fastapi)
-[![CodeFactor](https://www.codefactor.io/repository/github/rodion-gudz/telegram-bot-template/badge?s=5c628f092285245c2cbab683d2509317bcca48c9)](https://www.codefactor.io/repository/github/rodion-gudz/telegram-bot-template)
+[![CodeFactor](https://www.codefactor.io/repository/github/yeezy-na-izi/fastapi-template/badge)](https://www.codefactor.io/repository/github/yeezy-na-izi/fastapi-template)
 ![CodeStyle](https://img.shields.io/badge/code%20style-black-black)
 ![PythonVersions](https://img.shields.io/pypi/pyversions/FastApi)
 
@@ -11,6 +11,7 @@
 
 * ![aiogram 3](https://img.shields.io/badge/0.85.0-aiogram-blue) as a main library
 * ![pyrogram](https://img.shields.io/badge/0.19.2-tortoise--orm-orange) as a database library
+* ![poetry](https://img.shields.io/badge/1.2.1-poetry-yellow) as a dependency manager
 * 🎨 OpenAPI docs on `api/docs` and `api/redoc`
 * 🛠 Docker support with `docker-compose`
 
