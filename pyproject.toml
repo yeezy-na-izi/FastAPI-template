@@ -16,6 +16,7 @@ aerich = "^0.7.1"
 flake8 = "^5.0.4"
 black = "^22.10.0"
 pre-commit = "^2.20.0"
+ujson = "^5.5.0"
 
 
 [build-system]

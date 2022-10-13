@@ -67,15 +67,15 @@ app
     ├── application.py  # FastAPI application configuration.
     ├── events  # Package contains events.
     │   ├── __init__.py
-    │   ├── shutdown.py
-    │   └── startup.py
+    │   ├── shutdown.py  # Shutdown event.
+    │   └── startup.py  # Startup event.
     └── middlewares # Package contains middlewares.
         ├── __init__.py
-        └── main.py
+        └── main.py  # Main middleware.
 ```
 
 
-## Pre-commit
+## Pre-commit checker
 
 To install pre-commit simply run inside the shell:
 
@@ -86,9 +86,9 @@ pre-commit install
 pre-commit is very useful to check your code before publishing it.
 It's configured using .pre-commit-config.yaml file.
 
-By default it runs:
+By default, it runs:
 
 * black (formats your code);
-* flake8 (spots possibe bugs);
+* flake8 (spots possible bugs);
 
 You can read more about pre-commit here: https://pre-commit.com/
